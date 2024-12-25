@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Юридические услуги</title>
+	<!-- Используем Bootstrap 5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Поддержка вложенных меню для Юрист по наследству
+			const dropDown1 = document.querySelector("#nestedDropdown1");
+			const nestedMenu1 = document.querySelector(".dropdown-menu[aria-labelledby='nestedDropdown1']");
+
+			dropDown1.addEventListener("mouseover", function () {
+				nestedMenu1.classList.add("show");
+			});
+			dropDown1.addEventListener("mouseout", function () {
+				nestedMenu1.classList.remove("show");
+			});
+			dropDown1.addEventListener("click", function () {
+				window.location.href = "yurist-po-nasledstvu.html";
+			});
+
+			// Поддержка вложенных меню для Налоговый юрист
+			const dropDown2 = document.querySelector("#nestedDropdown2");
+			const nestedMenu2 = document.querySelector(".dropdown-menu[aria-labelledby='nestedDropdown2']");
+
+			dropDown2.addEventListener("mouseover", function () {
+				nestedMenu2.classList.add("show");
+			});
+			dropDown2.addEventListener("mouseout", function () {
+				nestedMenu2.classList.remove("show");
+			});
+			dropDown2.addEventListener("click", function () {
+				window.location.href = "nalogovyj-yurist.html";
+			});
+		});
+	</script>
+
+	<!-- Верхняя часть навбара -->
+	<nav class="navbar" style="background-color: #282e3f; z-index: 1000;">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="img/logo.png" alt="Logo" width="200">
+			</a>
+		</div>
+	</nav>
+
+	<!-- Основной навбар -->
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #333a4d; z-index: 3;">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">ГЛАВНАЯ</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">УСЛУГИ</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<!-- Подменю Юрист по наследству -->
+							<li class="dropdown">
+								<a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown1" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">Юрист по наследству</a>
+								<ul class="dropdown-menu" aria-labelledby="nestedDropdown1">
+									<li><a class="dropdown-item" href="Oformlenie-Nasledstva.html">Оформление
+											наследства</a></li>
+									<li><a class="dropdown-item" href="otkaz-ot-nasledstva.html">Отказ от наследства</a>
+									</li>
+									<li><a class="dropdown-item"
+											href="priznanie-zaveshhaniya-nedejstvitelnym.html">Принятие завещания
+											недействительным</a></li>
+									<li><a class="dropdown-item"
+											href="oformlenie-nasledstva-posle-smerti-odnogo-iz-suprugov.html">Оформление
+											наследства после смерти одного из супругов</a></li>
+									<li><a class="dropdown-item"
+											href="oformlenie-sobstvennosti-posle-vstupleniya-v-nasledstvo.html">Оформление
+											собственности после вступления в наследство</a></li>
+								</ul>
+							</li>
+
+							<!-- Подменю Налоговый юрист -->
+							<li class="dropdown">
+								<a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown2" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">Налоговый юрист</a>
+								<ul class="dropdown-menu" aria-labelledby="nestedDropdown2">
+									<li><a class="dropdown-item"
+											href="minimizacziya-nalogovoj-nagruzki-usluga-yurista.html">Минимизация
+											налоговой нагрузки</a></li>
+								</ul>
+							</li>
+
+							<!-- Остальные пункты -->
+							<li><a class="dropdown-item" href="yurist-po-dtp-s-postradavshimi.html">Юрист по ДТП с
+									пострадавшими</a></li>
+							<li><a class="dropdown-item"
+									href="osparivanie-mezhevaniya-spory-po-graniczam-uchastkov.html">Оспаривание
+									межевания, Споры по границам участков</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacts.html">КОНТАКТЫ</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<iframe
+			src="https://yandex.ru/map-widget/v1/?um=constructor%3A9c0dcb42789f18f33572fff926746de30f63b8ad9e8d86cdf214089acc20414a&amp;source=constructor"
+			width="100%" height="441" frameborder="0"></iframe>
+	</div>
+	<div class="container">
+		<div class="row row-cols-1 row-cols-md-2 ConCard">
+			<div class="col">
+				<div class="card">
+
+					<div class="card-body">
+						<h3 class="card-title text-uppercase text-center">Обратная связь</h3>
+
+						<div class="container">
+							<form action="/submit_form" method="post">
+								<div class="form-group">
+									<label for="name"></label>
+									<input type="text" class="form-control" id="name" name="name" required
+										placeholder="Имя">
+								</div>
+								<div class="form-group">
+									<label for="nomber"></label>
+									<input type="tel" class="form-control" id="nomber" name="nomber" required
+										placeholder="Ваш номер телефона">
+								</div>
+
+								<div class="form-group">
+									<label for="message"></label>
+									<textarea class="form-control" id="message" name="message" rows="4" required
+										placeholder="Ваш вопрос..."></textarea>
+								</div>
+
+								<button type="submit" class="btn2 mt-3">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+
+					<div class="card-body text-center">
+						<h3 class="card-title text-uppercase">Контакты для связи</h3>
+
+						<p class="card-text">ул. Шухова, д.14, стр.5, Москва</p>
+						<p class="card-text">+7 (903) 132-86-18
+						</p>
+						<p class="card-text">+7 (903) 363-77-49</p>
+
+						<p class="card-text">potapova.borisova@yandex.ru</p>
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer>
+
+	</footer>
+
+	<!-- Сценарии Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
