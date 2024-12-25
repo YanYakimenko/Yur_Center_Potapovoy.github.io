@@ -68,7 +68,7 @@
 						<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" role="button"
 							data-bs-toggle="dropdown" aria-expanded="false">УСЛУГИ</a>
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<!-- Подменю Юрист по наследству -->
+
 							<li class="dropdown">
 								<a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown1" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">Юрист по наследству</a>
@@ -89,7 +89,7 @@
 								</ul>
 							</li>
 
-							<!-- Подменю Налоговый юрист -->
+
 							<li class="dropdown">
 								<a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown2" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">Налоговый юрист</a>
@@ -100,7 +100,7 @@
 								</ul>
 							</li>
 
-							<!-- Остальные пункты -->
+
 							<li><a class="dropdown-item" href="yurist-po-dtp-s-postradavshimi.html">Юрист по ДТП с
 									пострадавшими</a></li>
 							<li><a class="dropdown-item"
@@ -124,10 +124,7 @@
 
 <!-- Шапка -->
 <div class="card border-0 position-relative">
-	<!-- Статичное изображение -->
 	<img src="img/photo1.jpg" class="card-img-top" alt="Юридические услуги">
-
-	<!-- Оверлей с анимацией текста, который наезжает -->
 	<div class="card-img-overlay c_img_overlay text-overlay">
 		<p class="card-text text-center fw-bold slide-text" style="font-size: 5vw;">ЮРИДИЧЕСКИЕ УСЛУГИ</p>
 		<p class="card-text text-center fw-bold slide-text" style="font-size: 5vw;">С ГАРАНТИЕЙ РЕЗУЛЬТАТА</p>
@@ -137,17 +134,13 @@
 	</div>
 </div>
 
-<!-- Добавим CSS -->
 <style>
-	/* Обертка для изображения */
 	.card-img-top.c_img_overlay {
 		object-fit: cover;
 		width: 100%;
 		height: 100vh;
-		/* Высота изображения на весь экран */
 	}
 
-	/* Оверлей с полупрозрачным фоном */
 	.text-overlay {
 		position: absolute;
 		top: 0;
@@ -159,54 +152,42 @@
 		justify-content: center;
 		align-items: center;
 		z-index: 2;
-		/* Убедитесь, что текст находится поверх изображения */
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 		background-color: rgba(0, 0, 0, 0.5);
-		/* Полупрозрачный фон */
 	}
 
-	/* Анимация текста наезжающего на изображение */
 	.slide-text {
 		opacity: 0;
 		transform: translateY(100px);
-		/* Начальная позиция текста снизу */
 		animation: slideIn 1s forwards;
 	}
 
-	/* Анимация движения текста */
 	@keyframes slideIn {
 		0% {
 			opacity: 0;
 			transform: translateY(100px);
-			/* Начинает с места ниже */
 		}
 
 		100% {
 			opacity: 1;
 			transform: translateY(0);
-			/* Текст приходит на место */
 		}
 	}
 
-	/* Настройка задержки анимации для каждого блока */
 	.slide-text:nth-child(1) {
 		animation-delay: 0s;
-		/* Без задержки для первого текста */
 	}
 
 	.slide-text:nth-child(2) {
 		animation-delay: 1s;
-		/* Задержка для второго */
 	}
 
 	.slide-text:nth-child(3) {
 		animation-delay: 1s;
-		/* Задержка для третьего */
 	}
 
 	.slide-text:nth-child(4) {
 		animation-delay: 2s;
-		/* Задержка для четвертого */
 	}
 </style>
 
@@ -270,51 +251,46 @@
 	</h5>
 </div>
 
-
-
-
-
-
 <!-- Карточки 2 -->
 <div class="text-center m-5">
 	<div class="row row-cols-1 row-cols-md-4 g-4 mt-5">
 		<div class="col">
 			<div class="card mb-3 border-0">
-				<a href="#" class="zoom-link">
+				<a href="contacts.html" class="zoom-link">
 					<img src="img/lishenieSvobodi.jpg" class="card-img-top zoom-img"
 						style="object-fit: cover; width: 100%; height: 200px;" alt="...">
 				</a>
-				<a href="#" class="btn btn-dark hover-button" onmouseover="changeText(this, 'Подробнее')"
+				<a href="contacts.html" class="btn btn-dark hover-button" onmouseover="changeText(this, 'Подробнее')"
 					onmouseout="changeText(this, 'ЛИШЕНИЕ СВОБОДЫ')">ЛИШЕНИЕ СВОБОДЫ</a>
 			</div>
 		</div>
 		<div class="col">
 			<div class="card mb-3 border-0">
-				<a href="#" class="zoom-link">
+				<a href="contacts.html" class="zoom-link">
 					<img src="img/razdelnasledstva.jpg" class="card-img-top zoom-img"
 						style="object-fit: cover; width: 100%; height: 200px;" alt="...">
 				</a>
-				<a href="#" class="btn btn-dark hover-button" onmouseover="changeText(this, 'Подробнее')"
+				<a href="contacts.html" class="btn btn-dark hover-button" onmouseover="changeText(this, 'Подробнее')"
 					onmouseout="changeText(this, 'РАЗДЕЛ НАСЛЕДСТВА')">РАЗДЕЛ НАСЛЕДСТВА</a>
 			</div>
 		</div>
 		<div class="col">
 			<div class="card mb-3 border-0">
-				<a href="#" class="zoom-link">
+				<a href="contacts.html" class="zoom-link">
 					<img src="img/rastorbrak.jpg" class="card-img-top zoom-img"
 						style="object-fit: cover; width: 100%; height: 200px;" alt="...">
 				</a>
-				<a href="#" class="btn btn-dark hover-button" onmouseover="changeText(this, 'Подробнее')"
+				<a href="contacts.html" class="btn btn-dark hover-button" onmouseover="changeText(this, 'Подробнее')"
 					onmouseout="changeText(this, 'РАСТОРЖЕНИЕ БРАКА')">РАСТОРЖЕНИЕ БРАКА</a>
 			</div>
 		</div>
 		<div class="col">
 			<div class="card mb-3 border-0">
-				<a href="#" class="zoom-link">
+				<a href="contacts.html" class="zoom-link">
 					<img src="img/lishnasled.jpg" class="card-img-top zoom-img"
 						style="object-fit: cover; width: 100%; height: 200px;" alt="...">
 				</a>
-				<a href="#" class="btn btn-dark hover-button" onmouseover="changeText(this, 'Подробнее')"
+				<a href="contacts.html" class="btn btn-dark hover-button" onmouseover="changeText(this, 'Подробнее')"
 					onmouseout="changeText(this, 'ЛИШЕНИЕ ПРАВА НАСЛЕДОВАНИЯ')">ЛИШЕНИЕ ПРАВА НАСЛЕДОВАНИЯ</a>
 			</div>
 		</div>
@@ -325,7 +301,7 @@
 <div class="card border-0">
 	<div class="container-fluid text-center mt-5 bg-light py-5">
 		<h3 class="display-5 mb-4" style="color: black;">Наши юристы готовы ответить на все ваши вопросы
-			<a href="#" class="btn btn-dark btn-lg my-4" onmouseover="changeText(this, 'КОНТАКТЫ')"
+			<a href="contacts.html" class="btn btn-dark btn-lg my-4" onmouseover="changeText(this, 'КОНТАКТЫ')"
 				onmouseout="changeText(this, 'КОНТАКТЫ')">КОНТАКТЫ</a>
 		</h3>
 		<div class="container">
@@ -420,12 +396,13 @@
 
 
 <!--Карусель-->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+	<!-- Индикаторы -->
 	<ol class="carousel-indicators">
-		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-		<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+		<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+		<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+		<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+		<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
 	</ol>
 	<div class="carousel-inner">
 		<div class="carousel-item active">
@@ -443,7 +420,7 @@
 									поможет подобрать под вас тариф.
 								</p>
 								<p>
-									<a href="#" class="btn btn-dark hover-button"
+									<a href="contacts.html" class="btn btn-dark hover-button"
 										onmouseover="changeText(this, 'ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК')"
 										onmouseout="changeText(this, 'ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК')">ЗАКАЗАТЬ ОБРАТНЫЙ
 										ЗВОНОК</a>
@@ -470,8 +447,8 @@
 									земельных участков и объектов недвижимости
 								</p>
 								<p>
-									<a href="#" class="btn btn-dark hover-button"
-										onmouseover="changeText(this, 'УСЛУГА')"
+									<a href="osparivanie-mezhevaniya-spory-po-graniczam-uchastkov.html"
+										class="btn btn-dark hover-button" onmouseover="changeText(this, 'УСЛУГА')"
 										onmouseout="changeText(this, 'УСЛУГА')">УСЛУГА</a>
 								</p>
 							</div>
@@ -499,7 +476,7 @@
 									нуля до полноценного ведения всей бухгалтерской документации.
 								</p>
 								<p>
-									<a href="#" class="btn btn-dark hover-button"
+									<a href="nalogovyj-yurist.html" class="btn btn-dark hover-button"
 										onmouseover="changeText(this, 'УСЛУГА')"
 										onmouseout="changeText(this, 'УСЛУГА')">УСЛУГА</a>
 								</p>
@@ -524,11 +501,7 @@
 									нами вы
 									будите чувствовать уверенность в выигрыше по важному для вас делу
 								</p>
-								<p>
-									<a href="#" class="btn btn-dark hover-button"
-										onmouseover="changeText(this, 'УСЛУГА')"
-										onmouseout="changeText(this, 'УСЛУГА')">УСЛУГА</a>
-								</p>
+
 							</div>
 							<div class="col"></div>
 						</div>
@@ -537,14 +510,16 @@
 			</div>
 		</div>
 	</div>
-	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+		data-bs-slide="prev">
 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="sr-only"></span>
-	</a>
-	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		<span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+		data-bs-slide="next">
 		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only"></span>
-	</a>
+		<span class="visually-hidden">Next</span>
+	</button>
 </div>
 
 
@@ -923,7 +898,7 @@
 
 <div class="container-fluid text-center mt-5" style="background-color: #f2f2f2;">
 	<H3>Наши юристы также будут представлять вас в гражданских судебных разбирательствах, таких как развод.
-		<a href="#" class="btn btn-dark hover-button mt-5 mb-5" onmouseover="changeText(this, 'КОНТАКТЫ')"
+		<a href="contacts.html" class="btn btn-dark hover-button mt-5 mb-5" onmouseover="changeText(this, 'КОНТАКТЫ')"
 			onmouseout="changeText(this, 'КОНТАКТЫ')">КОНТАКТЫ</a>
 	</H3>
 </div>
