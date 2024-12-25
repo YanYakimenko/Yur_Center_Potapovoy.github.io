@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Юридические услуги</title>
+	<!-- Используем Bootstrap 5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Поддержка вложенных меню для Юрист по наследству
+			const dropDown1 = document.querySelector("#nestedDropdown1");
+			const nestedMenu1 = document.querySelector(".dropdown-menu[aria-labelledby='nestedDropdown1']");
+
+			dropDown1.addEventListener("mouseover", function () {
+				nestedMenu1.classList.add("show");
+			});
+			dropDown1.addEventListener("mouseout", function () {
+				nestedMenu1.classList.remove("show");
+			});
+			dropDown1.addEventListener("click", function () {
+				window.location.href = "yurist-po-nasledstvu.html";
+			});
+
+			// Поддержка вложенных меню для Налоговый юрист
+			const dropDown2 = document.querySelector("#nestedDropdown2");
+			const nestedMenu2 = document.querySelector(".dropdown-menu[aria-labelledby='nestedDropdown2']");
+
+			dropDown2.addEventListener("mouseover", function () {
+				nestedMenu2.classList.add("show");
+			});
+			dropDown2.addEventListener("mouseout", function () {
+				nestedMenu2.classList.remove("show");
+			});
+			dropDown2.addEventListener("click", function () {
+				window.location.href = "nalogovyj-yurist.html";
+			});
+		});
+	</script>
+
+	<!-- Верхняя часть навбара -->
+	<nav class="navbar" style="background-color: #282e3f; z-index: 1000;">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="img/logo.png" alt="Logo" width="200">
+			</a>
+		</div>
+	</nav>
+
+	<!-- Основной навбар -->
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #333a4d; z-index: 3;">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">ГЛАВНАЯ</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">УСЛУГИ</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<!-- Подменю Юрист по наследству -->
+							<li class="dropdown">
+								<a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown1" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">Юрист по наследству</a>
+								<ul class="dropdown-menu" aria-labelledby="nestedDropdown1">
+									<li><a class="dropdown-item" href="Oformlenie-Nasledstva.html">Оформление
+											наследства</a></li>
+									<li><a class="dropdown-item" href="otkaz-ot-nasledstva.html">Отказ от наследства</a>
+									</li>
+									<li><a class="dropdown-item"
+											href="priznanie-zaveshhaniya-nedejstvitelnym.html">Принятие завещания
+											недействительным</a></li>
+									<li><a class="dropdown-item"
+											href="oformlenie-nasledstva-posle-smerti-odnogo-iz-suprugov.html">Оформление
+											наследства после смерти одного из супругов</a></li>
+									<li><a class="dropdown-item"
+											href="oformlenie-sobstvennosti-posle-vstupleniya-v-nasledstvo.html">Оформление
+											собственности после вступления в наследство</a></li>
+								</ul>
+							</li>
+
+							<!-- Подменю Налоговый юрист -->
+							<li class="dropdown">
+								<a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown2" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">Налоговый юрист</a>
+								<ul class="dropdown-menu" aria-labelledby="nestedDropdown2">
+									<li><a class="dropdown-item"
+											href="minimizacziya-nalogovoj-nagruzki-usluga-yurista.html">Минимизация
+											налоговой нагрузки</a></li>
+								</ul>
+							</li>
+
+							<!-- Остальные пункты -->
+							<li><a class="dropdown-item" href="yurist-po-dtp-s-postradavshimi.html">Юрист по ДТП с
+									пострадавшими</a></li>
+							<li><a class="dropdown-item"
+									href="osparivanie-mezhevaniya-spory-po-graniczam-uchastkov.html">Оспаривание
+									межевания, Споры по границам участков</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacts.html">КОНТАКТЫ</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<!-- Крошки -->
+	<div class="container">
+		<div class="card" style="color: black; border:none;">
+			<div class="card-body">
+				<div class="card-text">
+					<h1>Оспаривание межевания. Споры по границам участков.</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Оспаривание межевания. Споры по границам
+					участков.</li>
+			</ol>
+		</nav>
+	</div>
+
+	<!-- Основное содержимое -->
+	<div class="container mt-5">
+		<div class="row row-cols-1 row-cols-md-2">
+			<div class="col">
+				<img src="img/OsparMeshevania1.jpg" class="img-fluid" alt="...">
+			</div>
+
+			<div class="col">
+				<div class="card" style="border: none;">
+					<div class="card-body" style="color: black;">
+						<p class="card-title">
+							Оспаривание границ участков — это услуга юриста, которая поможет вам защитить свои права на
+							собственность. Если у вас возникли споры с соседями или другими лицами по поводу границы
+							вашего участка, наши юристы окажут вам помощь в решении этой проблемы.
+						</p>
+
+						<p class="card-text">Возникли проблемы и споры с соседями по поводу границ вашего участка? Не
+							знаете, как решить эту сложную ситуацию?
+
+						</p>
+						<p>
+							Обратитесь к профессиональным юристам, специализирующимся на оспаривании границ участков.
+							Наша компания предоставляет качественные услуги и гарантирует полное сопровождение вашего
+							дела.
+						</p>
+						<p>Наши юристы имеют богатый опыт в решении подобных споров и всегда стремятся найти оптимальное
+							решение для обеих сторон. Мы предлагаем вам профессиональные консультации и помощь в
+							оформлении всех необходимых документов и правовых актов.
+						</p>
+
+						<div class="card-body">
+							<div class="card-body">
+								<a href="#" class="btn btn-dark hover-button"
+									onmouseover="changeText(this, 'ПОЛУЧИТЬ ПОМОЩЬ')"
+									onmouseout="changeText(this, 'ПОЛУЧИТЬ ПОМОЩЬ')">ПОЛУЧИТЬ ПОМОЩЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Преимущества -->
+	<div class="container-fluid groupNalyur1" style="background-color: #e9ecef;">
+		<div class="container-fluid text-center p-5 mt-0">
+			<h1>
+
+				<p>Преимущества услуги юриста при спорах по границам участков</p>
+			</h1>
+		</div>
+		<div class="container">
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+				<div class="col">
+					<div class="card h-100">
+						<div class="card-body">
+							<h5 class="card-title text-center text-uppercase">Проверенный и надежный партнер</h5>
+							<img src="img/OsparMeshevania2.jpg" class="card-img-top" alt="...">
+							<p class="card-text">
+
+								Работа с юристом дает вам уверенность, что вы имеете дело с профессионалом, которому
+								можно доверять. Юристы, имеющие хорошую репутацию, всегда готовы помочь вам в самых
+								сложных ситуациях и обеспечить высокий уровень услуг.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+						<div class="card-body">
+							<h5 class="card-title text-center text-uppercase">Профессионализм и опыт</h5>
+							<img src="img/OsparMeshevania4.jpg" class="card-img-top" alt="...">
+							<p class="card-text">Юристы имеют глубокие знания в области закона и правовой практики. Они
+								имеют обширный опыт работы с разными случаями и умеют эффективно применять свои знания и
+								навыки для решения сложных юридических вопросов.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+						<div class="card-body">
+							<h5 class="card-title text-center text-uppercase">Сокращение рисков и дополнительных затрат
+							</h5>
+							<img src="img/DTPphoto4.jpg" class="card-img-top" alt="...">
+							<p class="card-text">Обращение к юристу позволяет избежать множества ошибок и неправильных
+								действий, что может привести к дополнительным затратам или юридическим проблемам.
+								Квалифицированный юрист проведет проверку всех документов и договоров, чтобы исключить
+								возможные риски и ошибки.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container-fluid" style="max-width: 1500px;">
+		<div class="container-fluid text-center p-5 mt-0">
+			<h1>
+				<p>Квалифицированная помощь специалиста
+				</p>
+			</h1>
+		</div>
+
+
+
+		<div class="row row-cols-1 row-cols-md-3 g-4 groupNalyur2">
+			<div class=" col">
+				<div class="card h-100">
+
+					<div class="card-body">
+						<h5 class="card-title text-center">Преимущества сотрудничества с нами:</h5>
+
+						<p class="card-text">
+						<ul>
+							<li>Опытные юристы с большим опытом в решении подобных споров</li>
+							<li>Индивидуальный подход к каждому клиенту</li>
+							<li>Конфиденциальность информации</li>
+							<li>Разумные цены и гибкая система оплаты</li>
+							<li>Высокая эффективность в решении споров</li>
+						</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+
+					<div class="card-body">
+						<h5 class="card-title text-center">Наши услуги:</h5>
+
+						<p class="card-text">
+						<ul>
+							<li>Консультация по оспариванию границ участков</li>
+							<li>Проверка документации на право собственности</li>
+							<li>Анализ геодезических данных и межевых планов</li>
+							<li>Представление интересов в суде</li>
+							<li>Разработка стратегии защиты прав</li>
+							<li>Помощь в достижении мирного соглашения</li>
+						</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+
+					<div class="card-body">
+						<h5 class="card-title text-center">Понятные условия сотрудничества</h5>
+
+						<p class="card-text">Мы предлагаем ясные и прозрачные условия сотрудничества, чтобы вы всегда
+							знали, что ожидать от нашей юридической услуги. Мы также предоставляем детальную информацию
+							об оплате и возможность выбора удобного для вас варианта оплаты.
+						</p>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<h3 class="text-uppercase text-center mb-4">Как мы работаем?</h3>
+		<p class="mb-4">На первом этапе мы проводим подробную консультацию с вами, чтобы полностью понять вашу ситуацию
+			и затем разработать стратегию защиты ваших интересов. После этого мы предоставляем вам все необходимые
+			документы и проводим подготовительные мероприятия.
+
+			Далее мы представляем вашу сторону в судебном процессе, ведем переговоры с другой стороной и ее адвокатом,
+			исследуем доступные доказательства и защищаем вас в суде, если это необходимо.</p>
+
+
+		<h4 class="text-center text-uppercase mt-4 mb-3">Услуги, которые мы предоставляем:</h4>
+		<ul>
+			<li>Консультация по оспариванию границ участков</li>
+			<li>Проверка документации на право собственности</li>
+			<li>Анализ геодезических данных и межевых планов</li>
+			<li>Представление интересов в суде</li>
+			<li>Разработка стратегии защиты прав</li>
+			<li>Помощь в достижении мирного соглашения</li>
+		</ul>
+
+		<p class="mt-4">Наша цель — предоставить вам максимально качественную и профессиональную юридическую
+			помощь!</p>
+	</div>
+
+
+
+
+	<!--Аккордион-->
+	<div class="container">
+		<div class="accordion" id="accordionExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><strong>
+							Какие услуги оказывает юрист в рамках оспаривания границ участков?</strong>
+					</button>
+				</h2>
+				<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Юрист может помочь вам оспорить границы участка, представляя ваши интересы в суде. Он проведет
+						анализ документов, соберет необходимые доказательства и будет вести переговоры с противоположной
+						стороной.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						<strong>Какова стоимость услуг юриста по оспариванию границ участков?</strong>
+					</button>
+				</h2>
+				<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Стоимость услуг юриста по оспариванию границ участков может варьироваться в зависимости от
+						сложности дела и объема работы. Чтобы узнать точную стоимость, рекомендуется связаться с юристом
+						и обсудить детали вашего случая.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						<strong>Сколько времени может занять процесс оспаривания границ участков?</strong>
+					</button>
+				</h2>
+				<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Время процесса оспаривания границ участков может варьироваться в зависимости от различных
+						факторов, таких как сложность дела, загруженность суда и наличие доказательств. Приблизительно
+						процесс может занять от нескольких месяцев до нескольких лет.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><strong>
+							Какие документы нужны для оспаривания границ участков?</strong>
+					</button>
+				</h2>
+				<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Для оспаривания границ участков вам понадобятся различные документы, такие как кадастровый план
+						участка, свидетельства о праве собственности, договоры купли-продажи, справки из архива и другие
+						подтверждающие документы. Юрист поможет вам разобраться, какие документы вам нужны и как их
+						собрать.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"><strong>
+							Какие риски связаны с оспариванием границ участков?</strong>
+					</button>
+				</h2>
+				<div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Оспаривание границ участков может быть связано с определенными рисками, такими как потеря
+						времени и денег, возможные юридические сложности, переговоры с противоположной стороной и
+						решение суда, которое может быть не в вашу пользу. Перед оспариванием границы участков
+						рекомендуется проконсультироваться с юристом, чтобы узнать о возможных рисках и способах их
+						минимизации.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"><strong>
+							Могу ли я оспорить границы участка самостоятельно, без помощи юриста?</strong>
+					</button>
+				</h2>
+				<div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Вы можете попытаться оспорить границы участка самостоятельно, без помощи юриста. Однако это
+						может быть сложной задачей, требующей знаний и опыта в области юриспруденции. Юрист сможет
+						предоставить вам профессиональную поддержку и помощь в решении вопросов, связанных с
+						оспариванием границ участков.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class=" container-fluid text-center p-5 mt-0">
+			<h1>
+				<p>О НАС</p>
+			</h1>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row row-cols-1 row-cols-md-2 g-4">
+			<div class="col">
+
+				<div class="card-body">
+					<iframe
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3A9c0dcb42789f18f33572fff926746de30f63b8ad9e8d86cdf214089acc20414a&amp;source=constructor"
+						width="600" height="441" frameborder="0"></iframe>
+				</div>
+
+			</div>
+			<div class="col groupNalyur2">
+				<div class="card ">
+
+					<div class="card-body groupNalyur2" style="color: black;">
+						<div class="card-tite"><strong>Принципы работы</strong></div>
+						<p class="card-text">Юридическая компания, которая помогает своим клиентам добиваться целей в
+							современном мире.</p>
+						<p class="card-text"><strong>Поможем когда все отказались.</strong></p>
+						<p class="card-text"><strong>Контакты</strong></p>
+						<p>
+
+						<p>+7 (903) 132-86-18</p>
+
+						<p>+7 (903) 363-77-49</p>
+
+						<p>potapova.borisova@yandex.ru</p>
+
+						</p>
+						<div class="card-body mt-5">
+							<a href="#" class="btn btn-dark hover-button"
+								onmouseover="changeText(this, 'ПОЛУЧИТЬ ПОМОЩЬ')"
+								onmouseout="changeText(this, 'ПОЛУЧИТЬ ПОМОЩЬ')">ПОЛУЧИТЬ ПОМОЩЬ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="container">
+		<div class=" container-fluid text-center p-5 mt-0">
+			<h1>
+				<p>Заказать звонок</p>
+			</h1>
+
+		</div>
+		<!--Форма заявки-->
+		<div class="container mb-5">
+			<form action="/submit_form" method="post">
+				<div class="form-group">
+					<label for="name"></label>
+					<input type="text" class="form-control" id="name" name="name" required placeholder="Имя">
+				</div>
+				<div class="form-group">
+					<label for="nomber"></label>
+					<input type="tel" class="form-control" id="nomber" name="nomber" required
+						placeholder="Ваш номер телефона">
+				</div>
+
+				<div class="form-group">
+					<label for="message"></label>
+					<textarea class="form-control" id="message" name="message" rows="4" required
+						placeholder="Ваш вопрос..."></textarea>
+				</div>
+
+				<button type="submit" class="btn2">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container-fluid mt-5" style="background-color:#202020;">
+			<div class="container-fluid text">
+				<div class="row row-cols-1 row-cols-md-4 g-4 group4">
+					<div class="col">
+						<div class="card text">
+							<div class="text">
+								<p class="card-text mb-5 mt-5">Юридический центр "Потаповой С.В." -
+									ваш
+									надежный
+									партнер в
+									решении
+									юридических вопросов!
+									В мире, где закон бывает неоднозначным и запутанным, найти верного и
+									опытного юриста
+									-
+									настоящая находка. Мы предлагаем свои услуги, чтобы обеспечить вам
+									справедливость и
+									защитить ваши права.</p>
+							</div>
+						</div>
+						<div class="card mb-3">
+							<a href=" #" class="zoom-link p-3">
+								<img src="img/inst1.jpg" class="card-img-top" alt="...">
+							</a>
+						</div>
+					</div>
+					<div class="col mt-5">
+						<div class="card text">
+							<div class="text">
+
+								<h5 class="card-title">Полезные ссылки</h5>
+								<hr style="border-top: 1px solid orange; width: 100%;">
+								<p class="card-text">«Возможно Вы сможете найти ответ на интересующий вопрос
+									перейдя по
+									ссылкам. Или заполните форму обратной связи и наши юристы с радостью Вам
+									помогут»
+								</p>
+
+								<p class="card-text"><a href="#">ВОПРОСЫ И ОТВЕТЫ</a></p>
+
+
+								<p class="card-text">Выберете в услугах подходящий подраздел. В каждом
+									подразделе есть
+									ответы на часто
+									задаваемые вопросы</p>
+
+								<p class="card-text"><a href="#">КАК ПИСАТЬ ЗАЯВЛЕНИЯ</a></p>
+
+								<p class="card-text">Выберете в услугах подходящий подраздел. В каждом
+									подразделе есть
+									образцы документов и
+									заявлений</p>
+
+								<p class="card-text"><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col mt-5">
+						<div class="card text">
+							<div class="text">
+
+								<h5 class="card-title">БЫСТРЫЙ КОНТАКТ</h5>
+								<hr style="border-top: 1px solid orange; width: 100%;">
+								<form action="/submit_form" method="post">
+									<div class="form-group">
+										<label for="email">Ваш адрес эл. почты:</label>
+										<input type="email" class="form-control" id="email" name="email" required>
+									</div>
+
+									<div class="form-group">
+										<label for="message">Кратко опишите ваше дело:</label>
+										<textarea class="form-control" id="message" name="message" rows="4"
+											required></textarea>
+									</div>
+
+									<button type="submit" class="btn2">Отправить</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col mt-5">
+						<div class="card text">
+							<div class="text">
+
+								<h5 class="card-title">НАШИ КОНТАКТЫ</h5>
+								<hr style="border-top: 1px solid orange; width: 100%;">
+								<p class="card-text">ул. Шухова, д.14, стр.5, Москва</p>
+								<p class="card-text">+7 (903) 132-86-18
+								</p>
+								<p class="card-text">+7 (903) 363-77-49</p>
+
+								<p class="card-text">potapova.borisova@yandex.ru</p>
+								<iframe
+									src="https://yandex.ru/map-widget/v1/?um=constructor%3A9c0dcb42789f18f33572fff926746de30f63b8ad9e8d86cdf214089acc20414a&amp;source=constructor"
+									width="450" height="441" frameborder="0"></iframe>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Сценарии Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

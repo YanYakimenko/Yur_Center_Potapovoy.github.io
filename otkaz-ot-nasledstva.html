@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Юридические услуги</title>
+	<!-- Используем Bootstrap 5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Поддержка вложенных меню для Юрист по наследству
+			const dropDown1 = document.querySelector("#nestedDropdown1");
+			const nestedMenu1 = document.querySelector(".dropdown-menu[aria-labelledby='nestedDropdown1']");
+
+			dropDown1.addEventListener("mouseover", function () {
+				nestedMenu1.classList.add("show");
+			});
+			dropDown1.addEventListener("mouseout", function () {
+				nestedMenu1.classList.remove("show");
+			});
+			dropDown1.addEventListener("click", function () {
+				window.location.href = "yurist-po-nasledstvu.html";
+			});
+
+			// Поддержка вложенных меню для Налоговый юрист
+			const dropDown2 = document.querySelector("#nestedDropdown2");
+			const nestedMenu2 = document.querySelector(".dropdown-menu[aria-labelledby='nestedDropdown2']");
+
+			dropDown2.addEventListener("mouseover", function () {
+				nestedMenu2.classList.add("show");
+			});
+			dropDown2.addEventListener("mouseout", function () {
+				nestedMenu2.classList.remove("show");
+			});
+			dropDown2.addEventListener("click", function () {
+				window.location.href = "nalogovyj-yurist.html";
+			});
+		});
+	</script>
+
+	<!-- Верхняя часть навбара -->
+	<nav class="navbar" style="background-color: #282e3f; z-index: 1000;">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="img/logo.png" alt="Logo" width="200">
+			</a>
+		</div>
+	</nav>
+
+	<!-- Основной навбар -->
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #333a4d; z-index: 3;">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">ГЛАВНАЯ</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">УСЛУГИ</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<!-- Подменю Юрист по наследству -->
+							<li class="dropdown">
+								<a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown1" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">Юрист по наследству</a>
+								<ul class="dropdown-menu" aria-labelledby="nestedDropdown1">
+									<li><a class="dropdown-item" href="Oformlenie-Nasledstva.html">Оформление
+											наследства</a></li>
+									<li><a class="dropdown-item" href="otkaz-ot-nasledstva.html">Отказ от наследства</a>
+									</li>
+									<li><a class="dropdown-item"
+											href="priznanie-zaveshhaniya-nedejstvitelnym.html">Принятие завещания
+											недействительным</a></li>
+									<li><a class="dropdown-item"
+											href="oformlenie-nasledstva-posle-smerti-odnogo-iz-suprugov.html">Оформление
+											наследства после смерти одного из супругов</a></li>
+									<li><a class="dropdown-item"
+											href="oformlenie-sobstvennosti-posle-vstupleniya-v-nasledstvo.html">Оформление
+											собственности после вступления в наследство</a></li>
+								</ul>
+							</li>
+
+							<!-- Подменю Налоговый юрист -->
+							<li class="dropdown">
+								<a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown2" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">Налоговый юрист</a>
+								<ul class="dropdown-menu" aria-labelledby="nestedDropdown2">
+									<li><a class="dropdown-item"
+											href="minimizacziya-nalogovoj-nagruzki-usluga-yurista.html">Минимизация
+											налоговой нагрузки</a></li>
+								</ul>
+							</li>
+
+							<!-- Остальные пункты -->
+							<li><a class="dropdown-item" href="yurist-po-dtp-s-postradavshimi.html">Юрист по ДТП с
+									пострадавшими</a></li>
+							<li><a class="dropdown-item"
+									href="osparivanie-mezhevaniya-spory-po-graniczam-uchastkov.html">Оспаривание
+									межевания, Споры по границам участков</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacts.html">КОНТАКТЫ</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<!-- Крошки -->
+	<div class="container">
+		<div class="card" style="color: black; border:none;">
+			<div class="card-body">
+				<div class="card-text">
+					<h1>Отказ от наследства</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Отказ от наследства</li>
+			</ol>
+		</nav>
+	</div>
+	<div class="container mt-5 mb-5">
+		<hr style="border-top: 2px solid #c18f59;">
+		<p>
+		<h5> Отказ от наследства возможен после того, как оно открылось. При жизни наследодателя сделать это
+			невозможно.h5>
+			</p>
+			<hr style="border-top: 2px solid  #c18f59;">
+	</div>
+	<div class="container">
+		<p>
+		<h5>Наследник может подать заявление об отказе от наследства по различным причинам. В первую очередь, если цена
+			наследуемых ценностей меньше, чем размер задолженностей наследодателя. Тогда принимать имущество невыгодно и
+			проще оформить отказ от вступления в наследство. Также гражданин может отказаться от наследства, чтобы оно
+			перешло к другому человеку, к примеру, близкому родственнику.</h5>
+		</p>
+		<p>
+		<h5>В любом случае, частичный отказ от наследства невозможен: принять его или отказаться допускается только
+			полностью. Хотя многие люди не хотят наследовать задолженности, поэтому им интересен отказ от части
+			наследства, закон это запрещает. Наследуются все материальные ценности и обязательства наследодателя, кроме
+			тех, что взаимосвязаны с его личностью. То есть, долги по кредиту наследуются, а выплата алиментов — нет.
+		</h5>
+		</p>
+		<p>
+		<h5>Существует два способа отказаться от наследства:</h5>
+		</p>
+		<h5>• Адресный — в пользу одного либо нескольких наследников.</h5>
+		<h5>• Неадресный — без указания конкретного гражданина. В данном случае, имущество распределится между прочими
+			наследниками.</h5>
+		<p>
+		<h5>Отказ наследника от наследства возможен в пользу любых других наследников. Ими могут быть наследники по
+			закону или по завещанию, любой из очередей (всего их восемь). Если наследодатель не составил завещание, то
+			унаследовать ценности смогут только лица, определенные законом.
+		</h5>
+		</p>
+		<p>
+		<h5>Отказ наследника от наследства совершается путем предоставления заявления нотариусу по месту открытия
+			наследства. Обратиться можно самому, через представителя или отправить заявление почтой (в этом случае
+			подпись наследника надо нотариально удостоверить). Если наследник не принял материальные ценности за полгода
+			после кончины наследодателя, то практикуется отказ от наследства через суд. Чтобы он восстановил срок,
+			обстоятельства пропуска должны быть уважительными.</h5>
+		</p>
+		<p>
+		<h5>Важно знать, что отказ от наследства в пользу другого наследника, к примеру, родственника, это окончательное
+			и бесповоротное решение. Поэтому на вопрос: «Можно ли взять отказ от наследства обратно?» — ответ
+			отрицательный.</h5>
+		</p>
+		<p>
+		<h5>Однако стоит учесть один момент. Иногда человек не хочет принимать наследство из-за насилия и угроз. В
+			данном случае, ответ на вопрос: «Можно ли оспорить отказ от наследства?» — положительный. При этом на
+			обращение к судье дается три года. Срок начинает отсчитывается на следующий после отказа гражданина от
+			наследства.</h5>
+		</p>
+		<p>
+		<h5>Для оспаривания отказа от наследства важно предоставить судье доказательства своей правоты и заручиться
+			юридической помощью. Тогда велика вероятность того, что получится отозвать отказ.</h5>
+		</p>
+
+	</div>
+	<div class="container mt-5 mb-5">
+		<hr style="border-top: 2px solid #c18f59;">
+		<p>
+		<h5> Если вы задумались об отказе от наследства, то наши юристы помогут вам оценить целесообразность данного
+			решения и оформить отказ. Мы оказываем комплексное правовое сопровождение по наследственным делам и помогаем
+			избежать ошибок..</h5>
+		</p>
+		<hr style="border-top: 2px solid  #c18f59;">
+	</div>
+	<div class="container">
+		<p>
+		<h5>Наши услуги:</h5>
+		</p>
+		<p>
+		<h5>• Юридическая консультация;</h5>
+		</p>
+		<p>
+		<h5>• Составление официального отказа от наследства;</h5>
+		</p>
+		<p>
+		<h5>• Подача отказа от наследства судье или нотариусу;</h5>
+		</p>
+		<p>
+		<h5>• Представительство в суде, если срок отказа пропущен;</h5>
+		</p>
+		<p>
+		<h5>• Судебное оспаривание отказа от наследства;</h5>
+		</p>
+		<p>
+		<h5>• Получение судебного акта.
+		</h5>
+		</p>
+		<p class="mt-5 mb-5">
+		<h5>Мы поможем оспорить отказ от наследства, совершенный под влиянием принуждения. Защитим ваши права, учитывая
+			судебную практику.</h5>
+		</p>
+	</div>
+
+	<div class="container-fluid text-center mt-5 mb-5" style="background-color: #f2f2f2;">
+		<H3>
+			Есть вопрос по оформлению отказа от наследства? Свяжитесь с нами сейчас..
+			<a href="#" class="btn btn-dark hover-button mt-5 mb-5" onmouseover="changeText(this, 'ЗАДАТЬ ВОПРОС')"
+				onmouseout="changeText(this, 'ЗАДАТЬ ВОПРОС')">ЗАДАТЬ ВОПРОС</a>
+		</H3>
+	</div>
+
+	<!--Аккордион-->
+	<div class="container text-center text-uppercase">
+		<h4>Часто задаваемые вопросы</h4>
+	</div>
+	<div class="container">
+		<div class="accordion" id="accordionExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+						aria-expanded="true" aria-controls="collapse1"><strong>
+							Возможен ли отказ от наследства по завещанию?</strong>
+					</button>
+				</h2>
+				<div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Да, это не запрещено законом.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+						<strong>Как оформить отказ от наследства?</strong>
+					</button>
+				</h2>
+				<div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<p>
+							Если шестимесячный срок с даты кончины наследодателя не истек, то порядок отказа от
+							наследства
+							несложен: достаточно подать нотариусу заявление.</p>
+						<p>
+							Некоторые люди интересуются, как оформляется отказ от наследства, если ехать к нотариусу
+							неудобно. Тогда проще всего отправить заявление почтой (при этом подпись заявителя должна
+							быть
+							нотариально удостоверена), или обратиться к представителю.Если шестимесячный срок с даты
+							кончины
+							наследодателя не истек, то порядок отказа от наследства несложен: достаточно подать
+							нотариусу
+							заявление.</p>
+						<p>
+							Некоторые люди интересуются, как оформляется отказ от наследства, если ехать к нотариусу
+							неудобно. Тогда проще всего отправить заявление почтой (при этом подпись заявителя должна
+							быть
+							нотариально удостоверена), или обратиться к представителю.</p>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+						<strong>Как оформить отказ от наследства после 6 месяцев с момент открытия наследства?</strong>
+					</button>
+				</h2>
+				<div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Для этого следует подать заявление в суд.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+						<strong>Каковы последствия отказа от наследства?</strong>
+					</button>
+				</h2>
+				<div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						После отказа гражданин не может получить имущество умершего, а право наследования появляется у
+						иных людей. Нотариальный отказ от наследства разрешается в срок до полугода с даты смерти
+						наследодателя. Тогда нотариус оформляет отказ от наследства на основании заявления.
+
+
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+						<strong>Каков срок отказа от наследства по ГК РФ?</strong>
+					</button>
+				</h2>
+				<div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Данный срок равняется 6 месяцам, но может быть восстановлен судом при пропуске по уважительным
+						обстоятельствам.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+						<strong>Возможен ли отказ от наследства несовершеннолетнего наследника?</strong>
+					</button>
+				</h2>
+				<div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						В данном случае, право отказа от наследства возлагается на его представителя, к примеру,
+						родителя. При этом следует учитывать положения закона. Согласно ст. 1157 ГК РФ отказ от
+						наследства несовершеннолетнего разрешается, но исключительно с согласия органа опеки и
+						попечительства.
+
+
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+						<strong>Допускается ли отказ от наследства при наследовании вымороченного имущества?</strong>
+					</button>
+				</h2>
+				<div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Нет, такой отказ невозможен.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+						<strong>Сколько стоит отказ от наследства у нотариуса?</strong>
+					</button>
+				</h2>
+				<div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Цена отказа от наследства у нотариуса составляет 100 рублей, если заявитель обращается сам, а не
+						через представителя. Однако нотариус берет деньги за другие услуги. Поэтому оформление отказа
+						обычно обходится дороже, но не больше 1000 рублей.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+						<strong>Каковы способы отказа от наследства?</strong>
+					</button>
+				</h2>
+				<div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Отказаться от наследства можно, посетив нотариуса, или отправив ему заявление по почте. Возможен
+						отказ от наследства через представителя.
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container text-center text-uppercase mt-5">
+		<h3>Образцы документов по оформлению отказа от наследства</h3>
+	</div>
+	<div class="container">
+		<p>
+		<h5>
+			Мы подобрали для вас самые необходимые образцы документов по оформлению отказа от наследства, которые могут
+			пригодиться для самостоятельного решения проблемы, но не забывайте, что одинаковых дел не существует и
+			каждая ситуация требует индивидуального подхода.
+		</h5>
+		</p>
+		<table class="table" style="width: 100%; max-width: 1000px; margin: auto;">
+			<tbody>
+				<tr>
+					<td class="w-50">
+						Заявление об отказе от наследства
+					</td>
+					<td class="w-50 text-center"><a href="" style="color: #c18f59;">СКАЧАТЬ</a></td>
+				</tr>
+				<tr>
+					<td class="w-50">Заявление об отказе от наследства в пользу другого лица</td>
+					<td class="w-50 text-center"><a href="" style="color: #c18f59;">СКАЧАТЬ</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+	<div class="container">
+		<div class=" container-fluid text-center p-5 mt-0">
+			<h2>
+				<p>Стоимость услуг налогового юриста
+				</p>
+			</h2>
+		</div>
+
+	</div>
+
+	<table class="table table-bordered" style="width: 100%; max-width: 1300px; margin: auto;">
+		<thead class="thead-dark">
+			<tr>
+				<th scope="col">Услуга</th>
+				<th scope="col">Стоимость</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Первичная консультация в офисе или по телефону</td>
+				<td>Бесплатно</td>
+			</tr>
+			<tr>
+				<td>Последующие консультации адвоката в офисе</td>
+				<td>от 4 000 руб.</td>
+			</tr>
+			<tr>
+				<td>Ознакомление с материалами дела в суде</td>
+				<td>от 5 000 руб.</td>
+			</tr>
+			<tr>
+				<td>Досудебная претензия</td>
+				<td>от 7 000 руб.</td>
+			</tr>
+			<tr>
+				<td>Представление интересов в суде по разводу</td>
+				<td>от 9 000 руб.</td>
+			</tr>
+			<tr>
+				<td>Составление и оформление брачного договора</td>
+				<td>от 3 000 руб.</td>
+			</tr>
+			<tr>
+				<td>Письменные пояснения по делу</td>
+				<td>от 7 000 руб.</td>
+			</tr>
+			<tr>
+				<td>Отзыв на исковое заявление</td>
+				<td>от 10 000 руб.</td>
+			</tr>
+			<tr>
+				<td>Ходатайство в суд</td>
+				<td>от 4 000 руб.</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="card-body text-center mt-5">
+		<a href="#" class="btn btn-dark hover-button" onmouseover="changeText(this, 'Расчитать стоимость')"
+			onmouseout="changeText(this, 'Расчитать стоимость')">Расчитать стоимость</a>
+	</div>
+	<div class="container">
+		<div class=" container-fluid text-center p-5 mt-0">
+			<h1>
+				<p>Заказать звонок</p>
+			</h1>
+
+		</div>
+		<!--Форма заявки-->
+		<div class="container mb-5">
+			<form action="/submit_form" method="post">
+				<div class="form-group">
+					<label for="name"></label>
+					<input type="text" class="form-control" id="name" name="name" required placeholder="Имя">
+				</div>
+				<div class="form-group">
+					<label for="nomber"></label>
+					<input type="tel" class="form-control" id="nomber" name="nomber" required
+						placeholder="Ваш номер телефона">
+				</div>
+
+				<div class="form-group">
+					<label for="message"></label>
+					<textarea class="form-control" id="message" name="message" rows="4" required
+						placeholder="Ваш вопрос..."></textarea>
+				</div>
+
+				<button type="submit" class="btn2">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container-fluid mt-5" style="background-color:#202020;">
+			<div class="container-fluid text">
+				<div class="row row-cols-1 row-cols-md-4 g-4 group4">
+					<div class="col">
+						<div class="card text">
+							<div class="text">
+								<p class="card-text mb-5 mt-5">Юридический центр "Потаповой С.В." -
+									ваш
+									надежный
+									партнер в
+									решении
+									юридических вопросов!
+									В мире, где закон бывает неоднозначным и запутанным, найти верного и
+									опытного юриста
+									-
+									настоящая находка. Мы предлагаем свои услуги, чтобы обеспечить вам
+									справедливость и
+									защитить ваши права.</p>
+							</div>
+						</div>
+						<div class="card mb-3">
+							<a href=" #" class="zoom-link p-3">
+								<img src="img/inst1.jpg" class="card-img-top" alt="...">
+							</a>
+						</div>
+					</div>
+					<div class="col mt-5">
+						<div class="card text">
+							<div class="text">
+
+								<h5 class="card-title">Полезные ссылки</h5>
+								<hr style="border-top: 1px solid orange; width: 100%;">
+								<p class="card-text">«Возможно Вы сможете найти ответ на интересующий вопрос
+									перейдя по
+									ссылкам. Или заполните форму обратной связи и наши юристы с радостью Вам
+									помогут»
+								</p>
+
+								<p class="card-text"><a href="#">ВОПРОСЫ И ОТВЕТЫ</a></p>
+
+
+								<p class="card-text">Выберете в услугах подходящий подраздел. В каждом
+									подразделе есть
+									ответы на часто
+									задаваемые вопросы</p>
+
+								<p class="card-text"><a href="#">КАК ПИСАТЬ ЗАЯВЛЕНИЯ</a></p>
+
+								<p class="card-text">Выберете в услугах подходящий подраздел. В каждом
+									подразделе есть
+									образцы документов и
+									заявлений</p>
+
+								<p class="card-text"><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col mt-5">
+						<div class="card text">
+							<div class="text">
+
+								<h5 class="card-title">БЫСТРЫЙ КОНТАКТ</h5>
+								<hr style="border-top: 1px solid orange; width: 100%;">
+								<form action="/submit_form" method="post">
+									<div class="form-group">
+										<label for="email">Ваш адрес эл. почты:</label>
+										<input type="email" class="form-control" id="email" name="email" required>
+									</div>
+
+									<div class="form-group">
+										<label for="message">Кратко опишите ваше дело:</label>
+										<textarea class="form-control" id="message" name="message" rows="4"
+											required></textarea>
+									</div>
+
+									<button type="submit" class="btn2">Отправить</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col mt-5">
+						<div class="card text">
+							<div class="text">
+
+								<h5 class="card-title">НАШИ КОНТАКТЫ</h5>
+								<hr style="border-top: 1px solid orange; width: 100%;">
+								<p class="card-text">ул. Шухова, д.14, стр.5, Москва</p>
+								<p class="card-text">+7 (903) 132-86-18
+								</p>
+								<p class="card-text">+7 (903) 363-77-49</p>
+
+								<p class="card-text">potapova.borisova@yandex.ru</p>
+								<iframe
+									src="https://yandex.ru/map-widget/v1/?um=constructor%3A9c0dcb42789f18f33572fff926746de30f63b8ad9e8d86cdf214089acc20414a&amp;source=constructor"
+									width="450" height="441" frameborder="0"></iframe>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Сценарии Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
