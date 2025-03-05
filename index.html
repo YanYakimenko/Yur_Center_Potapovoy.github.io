@@ -17,66 +17,35 @@
 </head>
 
 <body>
-	<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const isMobile = window.matchMedia("(max-width: 767px)").matches;
+	<script>//Подменю
+		document.addEventListener("DOMContentLoaded", function () {
+			const dropDown1 = document.querySelector("#nestedDropdown1");
+			const nestedMenu1 = document.querySelector(".dropdown-menu[aria-labelledby='nestedDropdown1']");
 
-  // Функция для работы с вложенным меню "Юрист по наследству"
-  const dropDown1 = document.querySelector("#nestedDropdown1");
-  const nestedMenu1 = document.querySelector(".dropdown-menu[aria-labelledby='nestedDropdown1']");
+			dropDown1.addEventListener("mouseover", function () {
+				nestedMenu1.classList.add("show");
+			});
+			dropDown1.addEventListener("mouseout", function () {
+				nestedMenu1.classList.remove("show");
+			});
+			dropDown1.addEventListener("click", function () {
+				window.location.href = "yurist-po-nasledstvu.html";
+			});
 
-  if (isMobile) {
-    dropDown1.addEventListener("click", function (e) {
-      // Отменяем действие по умолчанию, чтобы не выполнялся переход сразу
-      e.preventDefault();
-      // Если меню не открыто, то открываем его
-      if (!nestedMenu1.classList.contains("show")) {
-        nestedMenu1.classList.add("show");
-      } else {
-        // Если уже открыто — переходим по ссылке
-        window.location.href = "yurist-po-nasledstvu.html";
-      }
-    });
-  } else {
-    // На десктопе поддерживаем hover и клик для перехода
-    dropDown1.addEventListener("mouseover", function () {
-      nestedMenu1.classList.add("show");
-    });
-    dropDown1.addEventListener("mouseout", function () {
-      nestedMenu1.classList.remove("show");
-    });
-    dropDown1.addEventListener("click", function () {
-      window.location.href = "yurist-po-nasledstvu.html";
-    });
-  }
+			const dropDown2 = document.querySelector("#nestedDropdown2");
+			const nestedMenu2 = document.querySelector(".dropdown-menu[aria-labelledby='nestedDropdown2']");
 
-  // Аналогичный подход для второго меню (Налоговый юрист)
-  const dropDown2 = document.querySelector("#nestedDropdown2");
-  const nestedMenu2 = document.querySelector(".dropdown-menu[aria-labelledby='nestedDropdown2']");
-
-  if (isMobile) {
-    dropDown2.addEventListener("click", function (e) {
-      e.preventDefault();
-      if (!nestedMenu2.classList.contains("show")) {
-        nestedMenu2.classList.add("show");
-      } else {
-        window.location.href = "nalogovyj-yurist.html";
-      }
-    });
-  } else {
-    dropDown2.addEventListener("mouseover", function () {
-      nestedMenu2.classList.add("show");
-    });
-    dropDown2.addEventListener("mouseout", function () {
-      nestedMenu2.classList.remove("show");
-    });
-    dropDown2.addEventListener("click", function () {
-      window.location.href = "nalogovyj-yurist.html";
-    });
-  }
-});
-</script>
-
+			dropDown2.addEventListener("mouseover", function () {
+				nestedMenu2.classList.add("show");
+			});
+			dropDown2.addEventListener("mouseout", function () {
+				nestedMenu2.classList.remove("show");
+			});
+			dropDown2.addEventListener("click", function () {
+				window.location.href = "nalogovyj-yurist.html";
+			});
+		});
+	</script>
 
 	<!-- Верхняя часть навбара -->
 	<nav class="navbar" style="background-color: #282e3f; z-index: 1000;">
