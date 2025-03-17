@@ -643,27 +643,66 @@
 
 
 	<!--Форма заявки-->
-	<div class="container mb-5" id="form1">
-		<form action="/submit_form" method="post">
-			<div class="form-group">
-				<label for="name"></label>
-				<input type="text" class="form-control" id="name" name="name" required placeholder="Имя">
-			</div>
-			<div class="form-group">
-				<label for="nomber"></label>
-				<input type="tel" class="form-control" id="nomber" name="nomber" required
-					placeholder="Ваш номер телефона">
-			</div>
+	<form id="contact-form">
+		<div class="form-group">
+		  <label for="email">Ваш адрес эл. почты:</label>
+		  <input
+			type="email"
+			class="form-control"
+			id="email"
+			name="email"
+			required
+		  />
+		</div>
+		<div class="form-group">
+		  <label for="message">Кратко опишите ваше дело:</label>
+		  <textarea
+			class="form-control"
+			id="message"
+			name="message"
+			rows="4"
+			required
+		  ></textarea>
+		</div>
+		<button style="margin-top: 10px;" type="submit" class="btn2">Отправить</button>
+	  </form>
+	<script>
+		// Инициализация EmailJS
+		emailjs.init("cRFURvmoOsKcDLflT");
+		document
+		  .getElementById("contact-form")
+		  .addEventListener("submit", function (e) {
+			e.preventDefault();
+			const modal = new bootstrap.Modal(
+			  document.getElementById("statusModal")
+			);
+			const statusTitle =
+			  document.getElementById("statusModalTitle");
+			const statusBody =
+			  document.getElementById("statusModalBody");
+			emailjs
+			  .sendForm("service_g2hrsml", "template_kljjw72", this)
+			  .then(() => {
+				// Успешная отправка
+				this.reset();
+				statusTitle.textContent = "Успешно!";
+				statusBody.textContent =
+				  "Сообщение успешно отправлено!";
+				statusModal.classList.remove("modal-error");
+				statusModal.classList.add("modal-success");
+				modal.show();
+			  })
+			  .catch((error) => {
+				// Ошибка
+				statusTitle.textContent = "Ошибка!";
+				statusBody.textContent = `Произошла ошибка: ${error.text}`;
+				statusModal.classList.remove("modal-success");
+				statusModal.classList.add("modal-error");
+				modal.show();
+			  });
+		  });
+	  </script>
 
-			<div class="form-group">
-				<label for="message"></label>
-				<textarea class="form-control" id="message" name="message" rows="4" required
-					placeholder="Ваш вопрос..."></textarea>
-			</div>
-
-			<button type="submit" class="btn2">Отправить</button>
-		</form>
-	</div>
 	<footer>
 		<div class="container-fluid mt-5" style="background-color: #202020">
 		  <div class="container-fluid text">
@@ -747,7 +786,7 @@
 					</form>
 					<script>
 					  // Инициализация EmailJS
-					  emailjs.init("xdXtSVt7aFpIctRwE");
+					  emailjs.init("cRFURvmoOsKcDLflT");
 					  document
 						.getElementById("contact-form")
 						.addEventListener("submit", function (e) {
@@ -760,7 +799,7 @@
 						  const statusBody =
 							document.getElementById("statusModalBody");
 						  emailjs
-							.sendForm("service_mf77bel", "template_mn89k9k", this)
+							.sendForm("service_g2hrsml", "template_kljjw72", this)
 							.then(() => {
 							  // Успешная отправка
 							  this.reset();
